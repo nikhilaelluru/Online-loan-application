@@ -1,0 +1,42 @@
+p{
+    font-size: 22px;
+    color: gray;
+}
+.head1{
+    font-size: 50px;
+    margin-bottom: 0px;
+    color: black;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.lpart{
+    flex: 1;
+}
+.rpart{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.goals{
+    display: flex;
+    flex-direction: row;
+}
+.home{
+    flex: 1;
+    display: inline-block;
+    width: 700px;
+    margin-right: 50px;
+}
+.infohead{
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+}
+.apply{
+    color: blue;
+    font-size: 23px;
+}

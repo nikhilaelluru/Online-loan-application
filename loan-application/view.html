@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Applications Submitted</title>
+  <link rel="stylesheet" href="home.css">
+  <style>
+    /* Your CSS styles here */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+    <div class="Header">
+        <div class="Left-section">
+            <img class="logo" src="loan logo.jpg">
+            <p class="title">Easy Loans</p>
+        </div>
+        <div class="right-section">
+          <a class="home" href="easyLoans.html">Home</a>
+          <a class="about" href="aboutUs.html">About Us</a>
+          <a class="contact" href="contact.html">Contact Us</a>
+          <a class="service" href="services.html">Services</a>
+         <a class="view" href="view.html">View Applications</a>
+          <a class="loancal" href="loancalculator.html">Loan Calculator</a>
+          <a class="login" href="apply.html"><button class="login-button">Apply</button></a>
+      </div>
+    </div>
+  <h1>View Applications Submitted</h1>
+  
+  <label for="search-pid">Search by Aadhar No.:</label>
+  <input type="number" id="search-pid">
+  <button id="search-button">Search</button>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Phone No.</th>
+        <th>PAN No.</th>
+        <th>Aadhar No.</th>
+        <th>Amount</th>
+        <th>Monthly Salary</th>
+        <th>D.O.B.</th>
+        <th>Gender</th>
+      </tr>
+    </thead>
+    <tbody id="application-list"></tbody>
+  </table>
+  
+  <script src="view.js"></script>
+</body>
+</html>

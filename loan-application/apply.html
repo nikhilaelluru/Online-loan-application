@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loan Application Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  href="home.css">
+        <link rel="stylesheet"  href="apply.css">
+    </head>
+    <body>
+        <div class="Header">
+            <div class="Left-section">
+                <img class="logo" src="loan logo.jpg">
+                <p class="title">Easy Loans</p>
+            </div>
+            <div class="right-section">
+                <a class="home" href="easyLoans.html">Home</a>
+                <a class="about" href="aboutUs.html">About Us</a>
+                <a class="contact" href="contact.html">Contact Us</a>
+                <a class="service" href="services.html">Services</a>
+               <a class="view" href="view.html">View Applications</a>
+                <a class="loancal" href="loancalculator.html">Loan Calculator</a>
+                <a class="login" href="apply.html"><button class="login-button">Apply</button></a>
+            </div>
+        </div>
+        <br><br>
+        <center> <h1 class="head1">Loan Application Form</h1></center>  
+        <br><br>  
+<form action="" id="loan-apply">
+<div class="mainContainer">
+
+            <lable for="fullname" >Full Name</lable>
+            <input type="text" id="fullname" placeholder="Full Name" name="fullname" required>
+
+            <br><br>
+            <lable for="email" >Email</lable>
+            <input type="email" id="email" placeholder="e-mail" name="email" required>
+            <br><br>
+            <lable for="phone" >Phone Number</lable>
+            <input type="number" id="phone" placeholder="Phone No." name="phone" required>
+            <br><br>
+            <lable for="pan" >PAN Number</lable>
+            <input type="text" id="pan" placeholder="Pan card No." name="pan" required>
+            <p id="pan-error"></p>
+            <br><br>
+            <lable for="Aadhar" >Aadhar Number</lable>
+            <input type="text" id="Aadhar" placeholder="Aadhar No." name="Aadhar" required>
+            <p id="aadhar-error"></p>
+            <br><br>
+            <lable for="amount" >Loan Amount</lable>
+            <input type="number" id="amount" placeholder="Loan Amount Required" name="amount" required>
+            <br><br>
+            <lable for="Salary" >Monthly Salary</lable>
+            <input type="number" id="Salary" placeholder="Salary" name="Salary" required>
+            <br><br>
+            <lable for="DOB" >Date of Birth</lable>
+            <input type="date" id="DOB" placeholder="Date-Of-Birth" name="DOB" required>
+            <p id="dob-error"></p>
+            <br><br>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Ofther</option>
+            </select>
+            <!-- Submit button -->
+            <button id="submit-button">Submit</button>
+    </div>
+
+</form>
+<script src="panverify.js"></script>
+<script src="Aadhar.js"></script>
+<script src="validatedob.js"></script>
+<script src="apply_script.js"></script>
+
+    </body>
+</html>
